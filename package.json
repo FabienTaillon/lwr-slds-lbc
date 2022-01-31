@@ -1,0 +1,23 @@
+{
+  "name": "lwr-test",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf __lwr_cache__",
+    "dev": "node scripts/copy-resources.mjs node scripts/start-server.mjs",
+    "start": "MODE=prod node scripts/copy-resources.mjs node scripts/start-server.mjs",
+    "start:amd": "MODE=compat node scripts/copy-resources.mjs node scripts/start-server.mjs"
+  },
+  "dependencies": {
+    "@salesforce-ux/design-system": "^2.17.3",
+    "cpx": "^1.5.0",
+    "lightning-base-components": "^1.14.3-alpha",
+    "lwc": "^2.5.1",
+    "lwr": "^0.4.4"
+  },
+  "engines": {
+    "node": ">=14.15.4 <15"
+  }
+}
