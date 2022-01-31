@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "clean": "rm -rf __lwr_cache__",
-    "dev": "node scripts/copy-resources.mjs node scripts/start-server.mjs",
-    "start": "MODE=prod node scripts/copy-resources.mjs node scripts/start-server.mjs",
-    "start:amd": "MODE=compat node scripts/copy-resources.mjs node scripts/start-server.mjs"
+    "dev": "node scripts/copy-resources.mjs && node scripts/start-server.mjs",
+    "start": "MODE=prod node scripts/copy-resources.mjs && node scripts/start-server.mjs",
+    "start:amd": "MODE=compat node scripts/copy-resources.mjs && node scripts/start-server.mjs"
   },
   "dependencies": {
     "@salesforce-ux/design-system": "^2.17.3",
