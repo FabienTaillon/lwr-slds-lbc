@@ -15,7 +15,7 @@
     "cpx": "^1.5.0",
     "lightning-base-components": "^1.14.3-alpha",
     "lwc": "^2.5.1",
-    "lwr": "^0.4.4"
+    "lwr": "^0.5.5"
   },
   "engines": {
     "node": ">=14.15.4 <15"
